@@ -106,6 +106,7 @@ button{
     font-size: 40px;
     margin-top: 9%;
     margin-bottom: 25px;
+    animation: moveright 1s ease-in-out;
 }
 .continer p{
     font-size: 17px;
@@ -113,6 +114,10 @@ button{
     line-height: 1.5;
     color: rgb(136, 150, 209);
     font-weight: 500;
+    
+}
+.p1{
+    animation: moveright 1s ease-in-out;
 }
 .signup{
     color: white;
@@ -122,6 +127,7 @@ button{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+   animation: btnmoment 1s ease-in-out;
     
 }
 .signup:hover{
@@ -136,6 +142,7 @@ button{
     border: 1px solid rgb(89, 135, 204);
     border-radius: 8px;
     cursor: pointer;
+    animation: btnmoment 1s ease-in-out;
     
 }
 .install:hover{
@@ -149,12 +156,15 @@ button{
     color: rgb(136, 150, 209);
     font-weight: 500;
     margin-bottom:0 ;
+    animation: moveright 1s ease-in-out;
 }
 
 .items{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    animation: itemsmov 1s ease-in-out;
+
 }
 .item p{
     margin-top: 0;
@@ -162,4 +172,35 @@ button{
 }
 .item h3{
     margin-bottom: 0;
+}
+@keyframes moveright {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes  btnmoment {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+   
+}
+@keyframes itemsmov {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
