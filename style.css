@@ -86,7 +86,7 @@ button{
 .btn2{
     padding: 10px 20px;
     background-color: rgb(43, 38, 38);
-   color: white;
+    color: white;
     font-weight: 600;
     padding-right: 35px;
     text-align: left;
@@ -203,4 +203,54 @@ button{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+@media (max-width: 750px) {
+
+ .nav-left h2{
+    font-size: 50px;
+    margin-right: 0;
+}
+
+.nav-left a ,select{
+    display: none;
+}
+.nav-right a,.btn1{
+    display: none;
+} 
+.signup{
+    margin-bottom: 10px;
+}
+.btn2{
+    margin-top: 10px;
+   margin-left: 45px;
+    margin-right: 0;
+    padding: 8px 30px;
+    text-align: center;
+}
+}
+
+@media (max-width:1024px){
+.navbar{
+    width: 100%;
+}
+h2{
+    font-size: 50px;
+}
+.nav-left{
+    width: 50%;
+}
+.nav-left a ,select{
+    display: none;
+}
+.nav-right a{
+    display: none;
+} 
+.nav-right{
+    padding-left: 150px;
+    margin-top: 10px;
+    width: 30%;
+    align-items: end;
+}
 }
